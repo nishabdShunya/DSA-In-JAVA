@@ -15,19 +15,19 @@ public class BasicBacktrackingExamples {
         printReverse(1, n);
     }
 
-    private static void print(int n){
-        if(n < 1){
+    private static void print(int n) {
+        if (n < 1) {
             return;
         }
-        print(n-1);
+        print(n - 1);
         System.out.print(n + " ");
     }
 
-    private static void printReverse(int i, int n){
-        if(i>n){
+    private static void printReverse(int i, int n) {
+        if (i > n) {
             return;
         }
-        printReverse(i+1, n);
+        printReverse(i + 1, n);
         System.out.print(i + " ");
     }
 }

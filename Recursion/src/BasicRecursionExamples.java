@@ -14,18 +14,20 @@ public class BasicRecursionExamples {
         System.out.print("Reverse: ");
         printReverse(n);
     }
-    private static void print(int i, int n){
-        if(i > n){
+
+    private static void print(int i, int n) {
+        if (i > n) {
             return;
         }
         System.out.print(i + " ");
-        print(i+1, n);
+        print(i + 1, n);
     }
+
     private static void printReverse(int n) {
-        if(n < 1){
+        if (n < 1) {
             return;
         }
         System.out.print(n + " ");
-        printReverse(n-1);
+        printReverse(n - 1);
     }
 }
