@@ -5,8 +5,8 @@ public class SumOfNaturalNums {
         System.out.print("Enter the value of n: ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        int ans = sumOfNaturalNums(n);
-        System.out.println(ans);
+        int result = sumOfNaturalNums(n);
+        System.out.println(result);
     }
 
     private static int sumOfNaturalNums(int n) {
