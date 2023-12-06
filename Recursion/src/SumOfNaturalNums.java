@@ -5,14 +5,14 @@ public class SumOfNaturalNums {
         System.out.print("Enter the value of n: ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        sumOfNaturalNums(0, n);
+        int ans = sumOfNaturalNums(n);
+        System.out.println(ans);
     }
 
-    private static void sumOfNaturalNums(int sum, int n) {
-        if (n < 1) {
-            System.out.println(sum);
-            return;
+    private static int sumOfNaturalNums(int n) {
+        if (n == 0) {
+            return 0;
         }
-        sumOfNaturalNums(sum + n, n - 1);
+        return n + sumOfNaturalNums(n-1);
     }
 }
